@@ -29,6 +29,15 @@ $('#button').click(()=>{
     $('#messageField').val('');
   }
 })
+$('body').keypress(function(event){
+  if(event.key === 'Enter'){
+    if($('#messageField').val().length){
+      sendMessage($('#messageField').val(),'Anonym');
+      $("#messageContainer").append("<div class='sentMessage'>"+$('#messageField').val()+"</div>");
+      $('#messageField').val('');
+    }
+  }
+});
 
 function sendMessage(content,name){
   socket.emit('createMessage',{

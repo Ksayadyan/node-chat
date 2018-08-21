@@ -1,0 +1,82 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body{
+	background-image: url('../img/pagebg.png');
+	background-repeat: repeat;
+	position: relative;
+}
+#messageContainer{
+	z-index: -1;
+	width: 80%;
+	height: 90vh;
+	position: relative;
+	margin-left: 10%;
+	overflow: scroll;
+	border: 3px solid black;
+	border-radius: 15px;
+}
+.recievedMessage{
+	position: relative;
+	width: 50%;
+	height: auto + 10px;
+	margin-bottom: 5px;
+	background-color: blue;
+	border-radius: 7px;
+	color: white;
+	font-size: 15px;
+}
+#newUser{
+	position: absolute;
+	z-index: 10000;
+	width: 16%;
+	margin-left: 40%;
+	height: 50px;
+	border-radius: 5px;
+	transition: all 0.5s;
+	opacity: 0;
+	background-color: blue;
+	color: white;
+	text-align: center;
+}
+#inputField{
+	z-index: 0;
+	position: relative;
+	margin-left: 10%;
+	display: block;
+	width: 80%;
+	height: 10vh;
+	border:2px solid black;
+	border-radius: 10px;
+	background-color: lightblue;
+}
+#messageField{
+	display: inline-block;
+	width: 45%;
+	border-radius: 2px;
+	border: 0px;
+	margin-top: 15px;
+	margin-left: 2%;
+}
+#button{
+	background-color: blue;
+	display: inline-block;
+	width: 20%;
+	color: white;
+	text-align: center;
+	border-radius: 3px;
+}
+#button:hover{
+	cursor: pointer;
+}
+.sentMessage{
+	position: relative;
+	width: 50%;
+	height: auto + 10px;
+	margin-bottom: 5px;
+	background-color: lightblue;
+	border-radius: 7px;
+	color: black;
+	font-size: 15px;
+}
